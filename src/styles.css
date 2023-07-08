@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    background-color: #242B37;
+
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(Gilroy-Regular.ttf);
+}
+
+.nav {
+    background-color: #242B37;
+    color: #FFFBE6;
+    text-align: right;
+    align-items: stretch;
+    padding-right: 50px;
+    padding-top: 13px;
+
+}
+
+.nav ul {
+    list-style: none;
+    display: inline-flex;
+    align-items: right;
+    gap: calc(50px)
+   
+}
+
+.nav a {
+    color: inherit;
+    font-size: larger;
+    text-decoration: none;
+    display: flex;
+    height: 2rem;
+    padding: .20rem;
+}
+
+
+.nav li.active {
+    background-color:#555
+}
+
+.nav li:hover {
+    background-color:#777
+}
+
+
+
+.intro-homepage {
+    padding-left: 400px;
+    padding-top: 250px;
+}
+
+
+
+.nav img {
+    height: 65px;
+    width: auto;
+    float:left;
+    padding-left: 25px;
+    padding-top: 12px;
+    
+}
+
+.highlighted::first-line {
+    color: rgb(80, 255, 208);
+    font-size: smaller;
+    font-family: Courier New, monospace;
+
+}
+
+
+
+.pdf-container {
+    width: 500px;
+    height: auto;
+    padding-left: 663px;
+    padding-top: 50px;
+}
+
+
+.react-pdf__Page__textContent,
+.react-pdf__Page__annotations {
+  display: none;
+}
+
+.aboutpage-container div{
+
+    display: block;
+    clear: both;
+
+
+}
+
+.aboutpage-title {
+    overflow-wrap: break-word;
+    margin-top: 5%;
+    margin-left: 2%;
+
+}
+
+.aboutpage-title h1 {
+    font-size: 100px;
+    color: #FFFBE6;
+}
+
+.aboutpage-content {
+    overflow-wrap: break-word;
+    margin-top: 13%;
+    margin-left: 2%;
+    font-size: 23px;
+    color: #FFFBE6;
+    font-family: Gilroy;
+    width: 1400px;
+}
+
+.bottom-p {
+    padding-top: 20px;
+}
+
+.aboutpage-title img {
+    width: 1000px;
+
+}
