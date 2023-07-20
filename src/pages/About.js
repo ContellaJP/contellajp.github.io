@@ -1,5 +1,20 @@
 import '../styles.css';
-export default function About() {
+import Button from '@material-ui/core/Button';
+import DownloadIcon from '@mui/icons-material/Download';
+
+
+const ResumeDownloadButton = () => {
+    const handleDownload = () => {
+        
+        const resumeURL = process.env.PUBLIC_URL + '/pdf/Resume-LATESTUPDATE.pdf';
+        const link = document.createElement('a');
+        link.href = resumeURL;
+        link.download = '/Resume-LATESTUPDATE.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+    };
     return (
     <div className='aboutpage-container'>
         <div className='aboutpage-title'>
@@ -8,14 +23,19 @@ export default function About() {
         </div>
         
         <div className='aboutpage-content' style={{position:"absolute", top: "10%"}}>
-            <p className='top-p'> I'm thrilled to share my journey and showcase my work as a recent graduate of UAB, where I majored in computer science and minored in economics. From a young age, I've had an innate fascination with gaming, which sparked my passion for computers and everything that revolves around them. This profound interest paved the way for me to pursue a career in a closely related field. 
-            Throughout my academic journey, I acquired a solid foundation in computer science, honing my skills in programming, software development, and problem-solving. I found great joy in exploring the intricacies of algorithms and diving deep into the realm of data structures. In tandem, my minor in economics enhanced my understanding of the broader implications and impact of technology in today's interconnected world.
+            <p className='top-p'> I'm thrilled to share my journey and showcase my work as a recent graduate of UAB, where I majored in computer science and minored in economics. Computers have captivated me from a young age, leading me to pursue a career in a closely related field. 
+            Throughout my academic journey, I built a strong foundation in computer science, immersing myself in programming,
+             software development, and problem-solving. Exploring algorithms and data structures brought me immense satisfaction, and my minor in economics provided me with a broader understanding of technology's impact in our interconnected world.
             </p>
-            <p className='bottom-p'> Driven by my insatiable curiosity, I've embarked on numerous projects, both personal and academic, that have allowed me to apply my knowledge and develop practical solutions. Whether it's crafting intuitive user interfaces, building robust software systems, or optimizing algorithms, I thrive on the challenges presented by the dynamic nature of technology.
-            Moreover, my passion for gaming has remained a constant source of inspiration throughout my journey. It has fueled my creativity, taught me the value of teamwork, and sharpened my problem-solving skills. These lessons transcend the gaming realm, enabling me to approach each project with a holistic perspective, always striving for innovative and user-centric solutions.
-            Beyond technical expertise, I am a strong believer in the power of collaboration and effective communication. I thrive in team environments, leveraging my interpersonal skills to foster cooperation, and delivering results that exceed expectations.</p>
+            <p className='bottom-p'> Fueled by curiosity, I've taken on various projects, both personal and academic, that have allowed me to apply my knowledge and create practical solutions. Crafting user-friendly interfaces, building software systems, and optimizing algorithms are challenges that truly excite me. During my leisure time,
+             I find joy in exploring new places through travel and immersing myself in video games. These activities have given me valuable insights into creativity, teamwork, and problem-solving, which go beyond mere hobbies and deeply influence my approach to every project. With a holistic perspective in mind, I'm committed to developing practical and user-centric solutions, 
+            drawing inspiration from my diverse experiences.</p>
         </div>
 
+        <div className='button-div'>
+        <Button variant="contained" startIcon={<DownloadIcon />} onClick={handleDownload}> Download Resume </Button>
+        </div>
     </div>
     )
 }
+export default ResumeDownloadButton;
