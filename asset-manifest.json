@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/contellajp.github.io/static/css/main.a8f13e45.css",
+    "main.js": "/contellajp.github.io/static/js/main.1bc08154.js",
+    "static/media/Gilroy-Bold.ttf": "/contellajp.github.io/static/media/Gilroy-Bold.bf181b073b4773f45c8e.ttf",
+    "static/media/Gilroy-Regular.ttf": "/contellajp.github.io/static/media/Gilroy-Regular.fa652e766b6a85a1f9cb.ttf",
+    "index.html": "/contellajp.github.io/index.html",
+    "main.a8f13e45.css.map": "/contellajp.github.io/static/css/main.a8f13e45.css.map",
+    "main.1bc08154.js.map": "/contellajp.github.io/static/js/main.1bc08154.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8f13e45.css",
+    "static/js/main.1bc08154.js"
+  ]
+}
