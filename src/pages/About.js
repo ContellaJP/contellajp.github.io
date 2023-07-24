@@ -19,7 +19,7 @@ const ResumeDownloadButton = () => {
     <div className='aboutpage-container'>
         <div className='aboutpage-title'>
             <h1> ABOUT </h1>
-            <img src="green-line-asset" alt=''></img>
+            <img src={process.env.PUBLIC_URL+"/green-line-asset"} alt=''></img>
         </div>
         
         <div className='aboutpage-content' style={{position:"absolute", top: "10%"}}>

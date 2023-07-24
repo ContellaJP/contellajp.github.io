@@ -1,5 +1,6 @@
 import '../styles.css';
 
+
 export default function Projects() {
     return (
         
@@ -8,13 +9,13 @@ export default function Projects() {
                 <h1>PROJECTS</h1>
             </div>
             <div className='top-line'>
-                <img src="top-seperator.png" alt=''></img>
+                <img src={process.env.PUBLIC_URL+"/top-seperator.png"} alt=''></img>
             </div>
             <div className='projects-master'>
             <div className='projects-container'>
                 <div className='project-1'>
                     <div className='img-container-1'>
-                        <img src="homepagepicbig.png" alt=""/>
+                        <img src={process.env.PUBLIC_URL+"/Homepagepicbig.png"} alt=""/>
                     </div>
                     <a href='https://github.com/ContellaJP/contellajp.github.io'> My Portfolio </a>
                     <p> Website that I created to increase my front-end skills and knowledge. Allowing me to display my other projects in a more refined format. </p>
@@ -23,7 +24,7 @@ export default function Projects() {
 
             <div className='project-2'>
                     <div className='img-container-2'>
-                        <img src="pantreeUI.png" alt=""/>
+                        <img src={process.env.PUBLIC_URL+"/pantreeUI.png"} alt=""/>
                     </div>
                     <a href='https://github.com/ContellaJP/Pantree'> Pantree </a>
                     <p> Android mobile app that allows the user to search for recipes that they can make with what they already have in their posession. </p>
@@ -32,7 +33,7 @@ export default function Projects() {
 
             <div className='project-3'>
                     <div className='img-container-3'>
-                        <img src="farmUI.png" alt=""/>
+                        <img src={process.env.PUBLIC_URL+"/farmUI.png"} alt=""/>
                     </div>
                     <a href='https://github.com/ContellaJP/contellajp.github.io'> Drone Controller </a>
                     <p> A dashboard that allows the user to choose between a drone simulation and a real drone that is controlled with a SDK to run a route created by the user. </p>
@@ -41,30 +42,13 @@ export default function Projects() {
 
             <div className='project-4'>
                     <div className='img-container-4'>
-                        <img src="homeMonitoringUI.png" alt=""/>
+                        <img src= {process.env.PUBLIC_URL+"/homeMonitoringUI.png"} alt=""/>
                     </div>
                     <a href='https://github.com/ContellaJP/homeMonitoring'> Home Monitoring </a>
                     <p> Website that I created to increase my front-end skills and knowledge. Allowing me to display my other projects in a more refined format. </p>
 
             </div>
 
-            {/* <div className='project-5'>
-                    <div className='img-container-5'>
-                        <img src="DOGPIC.png" alt=""/>
-                    </div>
-                    <a href='https://github.com/ContellaJP/contellajp.github.io'> My Portfolio </a>
-                    <p> Website that I created to increase my front-end skills and knowledge. Allowing me to display my other projects in a more refined format. </p>
-
-            </div>
-
-            <div className='project-6'>
-                    <div className='img-container-6'>
-                        <img src="DOGPIC.png" alt=""/>
-                    </div>
-                    <a href='https://github.com/ContellaJP/contellajp.github.io'> My Portfolio </a>
-                    <p> Website that I created to increase my front-end skills and knowledge. Allowing me to display my other projects in a more refined format. </p>
-
-            </div> */}
 
             </div>
         </div>
