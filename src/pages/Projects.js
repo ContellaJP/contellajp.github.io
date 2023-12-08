@@ -45,7 +45,7 @@ export default function Projects() {
                         <img src= {process.env.PUBLIC_URL+"/homeMonitoringUI.png"} alt=""/>
                     </div>
                     <a href='https://github.com/ContellaJP/homeMonitoring'> Home Monitoring </a>
-                    <p> Website that I created to increase my front-end skills and knowledge. Allowing me to display my other projects in a more refined format. </p>
+                    <p> Website I developed along side a couple classmates that uses mock data to simulate real time home activities and a security system. </p>
 
             </div>
 
